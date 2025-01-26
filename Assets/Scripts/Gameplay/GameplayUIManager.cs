@@ -7,9 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameplayUIManager : MonoBehaviour
 {
     [SerializeField] private Image blackScreen;
-
-    [SerializeField] private TextMeshProUGUI statusText;
-    [SerializeField] private TextMeshProUGUI evoStatsText;
+    [SerializeField] private VideoStreaming video;
 
     [SerializeField] private GameObject actionPanel;
     [SerializeField] private GameObject foodPanel;
@@ -18,6 +16,8 @@ public class GameplayUIManager : MonoBehaviour
 
     private void Start()
     {
+        video.PlayVideo(Scene.Gameplay.ToString());
+
         blackScreen.gameObject.SetActive(true);
         blackScreen.DOFade(0f, 1f);
 

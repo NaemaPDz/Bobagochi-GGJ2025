@@ -1627,6 +1627,7 @@ GameObject:
   - component: {fileID: 668907466}
   - component: {fileID: 668907465}
   - component: {fileID: 668907468}
+  - component: {fileID: 668907469}
   m_Layer: 5
   m_Name: BGVideo
   m_TagString: Untagged
@@ -1698,7 +1699,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
@@ -1710,7 +1711,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 1
   m_WaitForFirstFrame: 1
@@ -1738,6 +1739,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 4
   m_AspectRatio: 1.7777778
+--- !u!114 &668907469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668907463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98bad9dfeacacde469f76ae5aec43649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &727611073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,8 +2019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackScreen: {fileID: 626174523}
-  statusText: {fileID: 0}
-  evoStatsText: {fileID: 0}
+  video: {fileID: 668907469}
   actionPanel: {fileID: 1223347548}
   foodPanel: {fileID: 212743491}
   toyPanel: {fileID: 1705355958}

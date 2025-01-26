@@ -1,27 +1,23 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Video;
-using System.Linq;
 using DG.Tweening;
 
 public class EndingUIHandler : MonoBehaviour
 {
     [SerializeField] private Image blackScreen;
     [SerializeField] private VideoPlayer player;
+    [SerializeField] private VideoStreaming video;
 
     private FinalPetData petData;
 
     private void Start()
     {
         blackScreen.gameObject.SetActive(true);
+        blackScreen.DOFade(0f, 1f);
 
         GameData g = Resources.Load<GameData>("Data/GameData");
-        EndingDatabase e = Resources.Load<EndingDatabase>("Data/EndingDatabase");
 
         player.loopPointReached += EndVideo;
 
@@ -35,26 +31,25 @@ public class EndingUIHandler : MonoBehaviour
             if ((petData.happiness / g.cappedStatsValue) * 100f < 30f &&
                 (petData.energy / g.cappedStatsValue) * 100f < 50f)
             {
-                player.clip = e.ending2Video;
+                video.PlayVideo(Scene.EndScene.ToString() + "2");
             }
             else
             {
                 PetType p = petData.petType;
-                
-                player.clip = e.endingDatas.FirstOrDefault(i => i.type == p).video;
+                video.PlayVideo(Scene.EndScene.ToString() + p.ToString());
             }
         }
         else
         {
-            int index = UnityEngine.Random.Range(0, e.endingDatas.Length);
+            int index = Random.Range(0, 4);
 
-            if (index == e.endingDatas.Length - 1)
+            if (index == 0)
             {
-                player.clip = e.ending2Video;
+                video.PlayVideo(Scene.EndScene.ToString() + "2");
             }
             else
             {
-                player.clip = e.endingDatas[index].video;
+                video.PlayVideo(Scene.EndScene.ToString() + ((PetType)index).ToString());
             }
         }
 

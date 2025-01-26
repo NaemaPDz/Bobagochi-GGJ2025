@@ -7,9 +7,11 @@ using System.Collections;
 public class ExitScene : MonoBehaviour
 {
     [SerializeField] private Image blackScreen;
+    [SerializeField] private VideoStreaming video;
 
     private void Start()
     {
+        video.PlayVideo(Scene.Gameplay.ToString());
         blackScreen.gameObject.SetActive(true);
         blackScreen.DOFade(0f, 1f);
     }
