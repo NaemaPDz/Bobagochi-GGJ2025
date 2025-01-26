@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8476847d735abd47959bc34da859241, type: 3}
+  m_Name: FoodDatabase
+  m_EditorClassIdentifier: 
+  foodDatas:
+  - foodName: Meat
+    happiness: 2
+    energy: 2
+    sweetness: -1
+    chewy: 1
+    foodIcon: {fileID: 21300000, guid: 0d3a71c51f402724989578b70ccfca84, type: 3}
+    foodHover: {fileID: 21300000, guid: c0896354724e55242b23df3562e2678d, type: 3}
+  - foodName: Pudding
+    happiness: 2
+    energy: 2
+    sweetness: 1
+    chewy: -1
+    foodIcon: {fileID: 21300000, guid: 83d3ea971b694fb4089420084659db87, type: 3}
+    foodHover: {fileID: 21300000, guid: 4e2a700c763cd014aba315fa3d541c3e, type: 3}
+  - foodName: Salad
+    happiness: 1
+    energy: 1
+    sweetness: 1
+    chewy: 1
+    foodIcon: {fileID: 21300000, guid: c2c1b0e3c0ecfce48bb390ca3326e43d, type: 3}
+    foodHover: {fileID: 21300000, guid: 14e3616c571802948a0802afaaf8e41d, type: 3}

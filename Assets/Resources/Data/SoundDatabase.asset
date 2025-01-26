@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf1adfac2442ad439937b0886919213, type: 3}
+  m_Name: SoundDatabase
+  m_EditorClassIdentifier: 
+  SoundDatas:
+  - soundName: btn
+    soundClip: {fileID: 8300000, guid: 326bdd055ff7db14a9053f8d214f4111, type: 3}
+  - soundName: lv1
+    soundClip: {fileID: 8300000, guid: 66d8309498b3a20459f0c959cfd73586, type: 3}
+  - soundName: lv2
+    soundClip: {fileID: 8300000, guid: 4d86f2b06e324194695930a31170b363, type: 3}
+  - soundName: lv3
+    soundClip: {fileID: 8300000, guid: fc13e6d4fafac1a4abd0a830e75d9bf4, type: 3}
+  - soundName: eat1
+    soundClip: {fileID: 8300000, guid: 8b87cec63a8f5d6448084be7052b227d, type: 3}
+  - soundName: eat2
+    soundClip: {fileID: 8300000, guid: 5b74c3b7e64651f4a8d368d64a353cbd, type: 3}
+  - soundName: play1
+    soundClip: {fileID: 8300000, guid: 198e8593d0e6f994693f3858fd89a40e, type: 3}
+  - soundName: play2
+    soundClip: {fileID: 8300000, guid: cee3a43db33939c4b9340740b8f18fb1, type: 3}
+  - soundName: play3
+    soundClip: {fileID: 8300000, guid: 9a9250880fe98df47943749d47988f39, type: 3}
+  - soundName: bath
+    soundClip: {fileID: 8300000, guid: 18a5006c83856114796d69a346751e4e, type: 3}
+  - soundName: sleep
+    soundClip: {fileID: 8300000, guid: a5cec586761ab3049b5a70653830b577, type: 3}
+  bgm: {fileID: 8300000, guid: 6074b17b30f2c8c44933365d7cb1d1bb, type: 3}

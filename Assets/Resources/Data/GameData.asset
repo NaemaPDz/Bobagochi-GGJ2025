@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2a7cf809ffd648a201105e7a8a602, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  cappedStatsValue: 10
+  cappedExpReached: 10
+  unwellPercentage: 50
+  hungerDecayRate:
+  - percentageThreshold: 30
+    ratePerMinute: 4
+    penaltyRate:
+    - affectedRate: 5
+      valueWasAffect: 0100000003000000
+    affectedActions:
+    - type: 1
+      actionWasAffect: 01000000
+  - percentageThreshold: 50
+    ratePerMinute: 2
+    penaltyRate:
+    - affectedRate: 5
+      valueWasAffect: 0100000003000000
+    affectedActions: []
+  - percentageThreshold: 100
+    ratePerMinute: 1
+    penaltyRate: []
+    affectedActions: []
+  happinessDecayRate:
+  - percentageThreshold: 15
+    ratePerMinute: 6
+    penaltyRate:
+    - affectedRate: 30
+      valueWasAffect: 0100000003000000
+    affectedActions: []
+  - percentageThreshold: 30
+    ratePerMinute: 4
+    penaltyRate:
+    - affectedRate: 15
+      valueWasAffect: 0100000003000000
+    affectedActions: []
+  - percentageThreshold: 50
+    ratePerMinute: 2
+    penaltyRate: []
+    affectedActions: []
+  - percentageThreshold: 100
+    ratePerMinute: 1
+    penaltyRate: []
+    affectedActions: []
+  cleanlinessDecayRate:
+  - percentageThreshold: 10
+    ratePerMinute: 4
+    penaltyRate: []
+    affectedActions:
+    - type: 1
+      actionWasAffect: 000000000100000003000000
+  - percentageThreshold: 30
+    ratePerMinute: 4
+    penaltyRate:
+    - affectedRate: 10
+      valueWasAffect: 01000000
+    affectedActions: []
+  - percentageThreshold: 50
+    ratePerMinute: 2
+    penaltyRate: []
+    affectedActions: []
+  - percentageThreshold: 100
+    ratePerMinute: 1
+    penaltyRate: []
+    affectedActions: []
+  energyDecayRate:
+  - percentageThreshold: 20
+    ratePerMinute: 0
+    penaltyRate: []
+    affectedActions:
+    - type: 0
+      actionWasAffect: 03000000
+  - percentageThreshold: 30
+    ratePerMinute: 4
+    penaltyRate:
+    - affectedRate: 50
+      valueWasAffect: 000000000100000002000000
+    - affectedRate: 60
+      valueWasAffect: 03000000
+    affectedActions: []
+  - percentageThreshold: 50
+    ratePerMinute: 2
+    penaltyRate:
+    - affectedRate: 30
+      valueWasAffect: 000000000100000002000000
+    - affectedRate: 40
+      valueWasAffect: 03000000
+    affectedActions: []
+  - percentageThreshold: 100
+    ratePerMinute: 1
+    penaltyRate: []
+    affectedActions: []
